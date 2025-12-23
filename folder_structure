@@ -1,0 +1,13 @@
+tcp_dashboard_backend/
+├─ main.py
+└─ app/
+   ├─ __init__.py
+   ├─ config.py
+   ├─ db.py
+   ├─ tcp_server.py
+   ├─ schemas.py
+   └─ routes/
+      ├─ __init__.py
+      ├─ clients.py
+      ├─ logs.py
+      └─ allowed_clients.py
