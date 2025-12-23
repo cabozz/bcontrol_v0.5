@@ -12,7 +12,7 @@ db_pool: asyncpg.Pool | None = None
 async def init_db_pool() -> None:
     """Create global pool and ensure tables exist."""
     global db_pool
-    db_pool = await asyncpg.create_pool(settings.DATABASE_URL)
+    db_pool = await asyncpg.create_pool(settings.DATABASE_URL, ssl=False)
     await _init_db(db_pool)
 
 
